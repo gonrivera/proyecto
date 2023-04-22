@@ -8,7 +8,7 @@ a{
     text-decoration: none;
 }
 
-h1,h2{
+h1,h2,h3,h4{
     text-align: center;
 }
 
@@ -16,33 +16,90 @@ body {
     background-color: #FCF5EB;
 }
 
-.navbar-brand img{
-    width: 180px;
-    height: 80px;
+.texto-nota{
+    background-color: #2CA484;
+}
+
+.img-nota{
+    width: 100%;
+    height: 200px;
+}
+
+.padre-nosotros{
+    margin-bottom: 20px;
+}
+
+.card{
+    background-color: #2CA484;
+    margin: 15px 10px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.btn{
+    background-color: #6b6b6b;
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .container-fluid{
+        display: flex;
+        gap: 70px;
+    }
 }
 
 
+.navbar-brand img{
+    width: 150px;
+    height: 70px;
+}
 
+@media (min-width: 900px) {
+    .navbar-brand img{
+        width: 180px;
+        height: 90px;
+    }
+}
+@media (min-width: 991px) {
+    .nav-item{
+        font-size: 20px;
+        margin: 10px;
+    }
+}
 
+.car{
+    background-color: aqua;
+}
 
+.carousel-item img{
+    height: 300px;
+}
 
-
-
-
-
-
-
-
-
-
+@media (min-width: 900px) {
+    .carousel-inner {
+        margin: 15px auto ;
+        width: 75%;
+    }
+    .carousel-item img {
+        height: 480px;
+    }
+}
 
 .padre-contacto{
-    display: flex;
-    flex-wrap: column;
+    display: grid;
     align-items:center;
+    grid-template-columns: repeat(1,1fr);
     gap: 200px;
     margin-bottom: 20px;
     margin-left: 200px;
+}
+
+@media (min-width:900px){
+    .padre-contacto{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 .mapa{
@@ -60,41 +117,21 @@ body {
 }
 
 
-
-
 footer{
     color: #fff;
     background-color: #1c1e21;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 0;
 }
 
-footer .footer-1{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 5px 20px;
-    gap: 90px;    
-}
-
-.logo-footer img{
-    width: 250px;
-    height: 90px;
+.footer-1{
+    padding: 5px;
 }
 
 .padre-redes{
     text-align: center;
 }
-
-
-
 footer .footer-2{
     text-align: center;
 }
-
 .icono-redes, .whatsapp {
     width: 40px;
 }
