@@ -8,9 +8,20 @@ a{
     text-decoration: none;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
     text-align: center;
 }
+
+nav{
+    top:0;
+    background-color: #FCF5EB;
+    opacity: 0.8;
+}
+
+.nav-link:hover{
+    color: #2CA484;
+}
+
 
 body {
     background-color: #FCF5EB;
@@ -18,7 +29,8 @@ body {
 
 .texto-nota{
     background-color: #2CA484;
-    padding: 30px;
+    padding: 20px;
+    height: 200px;
 }
 
 .img-nota{
@@ -27,6 +39,7 @@ body {
 }
 
 .padre-nosotros{
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -70,9 +83,6 @@ body {
     }
 }
 
-.car{
-    background-color: aqua;
-}
 
 .carousel-item img{
     height: 300px;
@@ -90,16 +100,17 @@ body {
 
 .padre-contacto{
     display: grid;
+    text-align: center;
     align-items:center;
-    grid-template-columns: repeat(1,1fr);
-    gap: 200px;
-    margin-bottom: 20px;
-    margin-left: 200px;
+    grid-template-columns: repeat(1,1fr);    
+    margin-bottom: 20px;    
 }
 
 @media (min-width:900px){
     .padre-contacto{
         grid-template-columns: repeat(3,1fr);
+        margin-left: 200px;
+        gap: 200px;
     }
 }
 
@@ -115,6 +126,10 @@ body {
 .contacto{
     display: flex;
     flex-direction: column;
+}
+
+.botoncont{
+    margin-top: 10px;
 }
 
 
