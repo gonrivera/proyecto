@@ -13,12 +13,12 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  background-color: #f5e4cd;
+  background-color: #fcf5eb;
 }
 
 .navbar {
   top: 0;
-  background-color: #f5e4cd;
+  background-color: #fcf5eb;
   opacity: 0.8;
 }
 .navbar .navbar-brand img {
@@ -31,7 +31,7 @@ body {
 
 @media (min-width: 900px) {
   .navbar-brand img {
-    width: 180px;
+    width: 200px;
     height: 90px;
   }
 }
