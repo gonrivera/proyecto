@@ -1,0 +1,59 @@
+.padre-contacto{
+    @include flex-columna;
+    gap: 15px;
+        .mapa{
+            @include flex-columna;
+            gap: 5px;
+            margin-left: 30px;
+                iframe{
+                    max-width: 100%;
+                }
+        }
+        .contacto{
+            @include flex-columna;
+            gap: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            .input{
+                width: 300px;
+                transition: width .5s;
+            }
+            .input:focus{
+                width: 350px;
+            }
+
+            .inputt{
+                width: 300px;
+                height: 100px;
+                transition: width .5s;
+            }
+            .inputt:focus{
+                width: 350px;
+                height: 150px;
+            }
+
+            .btncont{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                .btn-contacto{
+                    @extend .btn;
+                    border-radius: 25% 10%;
+                    padding: 5px 15px;
+                    border-color: $color-secundario;
+                        &:hover{
+                            background-color: $color-secundario;
+                            color: white;                            
+                        }
+                }               
+            }
+        }
+    }
+@media (min-width:900px){
+    .padre-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}

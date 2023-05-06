@@ -1,0 +1,9 @@
+$color-primario: #f5e4cd;
+$color-footer: #1c1e21;
+$color-secundario: #2CA484;
+
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
