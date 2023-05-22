@@ -10,12 +10,24 @@ a{
     text-decoration: none;
 }
 
-h1,h2,h3,h4,h5{
+h1{
     text-align: center;
+    color: $color-secundario;
+    margin-bottom: 25px;
+    font-size: 29px;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.125rem;
 }
 
 body {
     background-color: $color-primario;
+}
+.textos{
+    text-align: justify;
+    padding: 15px 20px;
 }
 
 .navbar{
@@ -23,20 +35,15 @@ body {
     background-color: $color-primario;
     opacity: 0.8;
     .navbar-brand img{
-        width: 150px;
+        width: 170px;
         height: 70px;
+        margin-left: 15px;
     }
     .nav-link:hover{
-        color: #2CA484;
+        color: $color-secundario;
     }
 }
 
-@media (min-width: 900px) {
-    .navbar-brand img{
-        width: 200px;
-        height: 90px;
-    }
-}
 @media (min-width: 991px) {
     .nav-item{
         font-size: 20px;
